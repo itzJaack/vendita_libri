@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <title>Libri</title>
+</head>
+<body class="books-page">
+    <div class="bg books-bg">
+        <header>
+            <div class="nav">
+                <div class="nav-item">
+                    <a href="index.html"><img src="img/home_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt="Home" style="vertical-align:middle;"></a>
+                </div>
+                <div class="nav-item">
+                    <a href="about-me.html"><img src="img/person_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt="Chi sono" style="vertical-align:middle;"></a>
+                </div>
+                <div class="nav-item">
+                    <a href="books.html"><img src="img/book_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt="Libri" style="vertical-align:middle;"></a>
+                </div>
+            </div>
+        </header>
+
+        <div class="content">
+            <h1>Libri</h1>
+            <div id="lista-libri"></div>
+        </div>
+        <button id="info-btn" class="info-btn" aria-label="Extra info">
+            <img src="img/help_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt="?" style="width:32px;height:32px;">
+        </button>
+        <div id="info-overlay"></div>
+        <div class="content extra-info" id="extra-info">
+            <button id="close-info" class="close-info" aria-label="Chiudi info">&times;</button>
+            <h2>INFO EXTRA</h2>
+            <p>Per eventuali informazioni aggiuntive/foto, sentitevi liberi di scrivermi a 
+                <a href="mailto:gibinjacopo@liceoandreamaffei.it">gibinjacopo@liceoandreamaffei.it</a>
+            </p>
+        </div>
+    </div>
+
+    <footer class="footer-bar">
+        <div class="footer-content">
+            &copy; 2024, Jacopo Gibin.<br>Tutti i diritti riservati.
+        </div>
+    </footer>
+
+    <script src="src/books.js" defer></script>
+</body>
+</html>
