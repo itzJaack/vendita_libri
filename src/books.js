@@ -42,7 +42,7 @@ document.addEventListener('DOMContentLoaded', () => {
         },
         {
             disponibile: true,
-            classe: "Ⅲª",
+            classe: "Ⅲª/Ⅳª",
             titolo: "Colori della matematica - Ed.Blu aggiornata-L.Scient Vol. 3 Gamma+Trigon+Ebook",
             isbn: "9788849424119",
             prezzo: "23,00€",
