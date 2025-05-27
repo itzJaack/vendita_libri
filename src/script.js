@@ -39,7 +39,6 @@ audio.addEventListener('loadedmetadata', function() {
     progressBar.max = audio.duration || 100;
     timeLabel.textContent = '0:00 / ' + formatTime(audio.duration || 0);
 });
-
 audio.addEventListener('timeupdate', function() {
     progressBar.value = audio.currentTime;
     timeLabel.textContent = formatTime(audio.currentTime) + ' / ' + formatTime(audio.duration || 0);

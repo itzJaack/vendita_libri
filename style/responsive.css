@@ -1,180 +1,196 @@
-@media (max-width: 900px) {
-  .bg, .content, .tabella-libri, .footer-bar, .music-bar, .nav, .content.extra-info, #extra-info {
-    max-width: 100vw !important;
-    width: 100vw !important;
-    min-width: 0 !important;
-    box-sizing: border-box !important;
-    border-radius: 0 !important;
-    left: 0 !important;
-    transform: none !important;
+@media only screen and (max-width: 600px) {
+  body {
+    font-size: 16px;
+    padding: 10px;
+  }
+  nav, .sidebar {
+    display: none;
+  }
+  .main-content {
+    width: 100%;
+    padding: 0;
   }
   .content {
-    margin: 70px 0 16px 0 !important;
-    padding: 10px 2vw !important;
-    border-width: 1px !important;
+    max-width: 100vw;
+    padding: 4vw 2vw;
+    margin: 70px 0 16px 0;
+    font-size: 0.98em;
   }
-  .tabella-libri {
-    font-size: 0.98em !important;
-    min-width: 0 !important;
-    margin: 12px 0 0 0 !important;
-    border-radius: 0 !important;
+  .bg .nav {
+    width: 100vw;
+    min-width: 0;
+    max-width: 100vw;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 0.95em;
+    gap: 8px;
+    height: 44px;
+    border-radius: 0;
+    top: 0;
   }
-  .tabella-libri th, .tabella-libri td {
-    padding: 7px 2px !important;
-    font-size: 0.98em !important;
+  .bg .nav .nav-item a img {
+    width: 24px;
+    height: 24px;
   }
   .music-bar {
-    position: static !important;
-    width: 100vw !important;
-    border-radius: 0 !important;
-    padding: 8px 2vw !important;
-    font-size: 1em !important;
-    left: 0 !important;
-    top: unset !important;
-    transform: none !important;
-  }
-  .footer-bar {
-    left: 0 !important;
-    bottom: 0 !important;
-    border-radius: 0 !important;
-    width: 100vw !important;
-    max-width: 100vw !important;
-    min-width: 0 !important;
-    padding: 8px 0 !important;
-    font-size: 0.98em !important;
-    box-shadow: none !important;
-    justify-content: center !important;
-  }
-  .footer-content {
-    width: 100vw !important;
-    max-width: 100vw !important;
-    padding: 0 2vw !important;
-  }
-  .nav {
-    width: 100vw !important;
-    min-width: 0 !important;
-    max-width: 100vw !important;
-    left: 0 !important;
-    transform: none !important;
-    border-radius: 0 !important;
-    gap: 10px !important;
-    font-size: 1em !important;
-    height: 44px !important;
-    top: 0 !important;
-  }
-  .nav .nav-item a img {
-    width: 24px !important;
-    height: 24px !important;
-  }
-  .info-btn {
-    right: 12px !important;
-    bottom: 12px !important;
-    width: 44px !important;
-    height: 44px !important;
-  }
-  #proposta-prezzo .contenuto-proposta {
-    min-width: 0 !important;
-    width: 98vw !important;
-    padding: 12px 2vw 10px 2vw !important;
-  }
-  #proposta-prezzo input[type="text"] {
-    width: 98% !important;
-    font-size: 1em !important;
-  }
-  .riga-nota-libro td.nota-libro {
-    padding-left: 10px !important;
-    font-size: 0.95em !important;
-  }
-  #extra-info, .content.extra-info {
-    max-width: 98vw !important;
-    width: 98vw !important;
-    left: 1vw !important;
-    transform: none !important;
-    padding: 10px 2vw 10px 2vw !important;
-    border-radius: 0 !important;
-  }
-  html {
-    font-size: 15px;
-  }
-  body {
-    padding: 0 0.5rem;
-    margin: 0;
-  }
-  header {
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 0.5rem 0;
-  }
-  .navigazione {
-    flex-direction: column;
-    width: 100%;
-    align-items: flex-start;
-    gap: 0.5rem;
-  }
-  .navigazione a, .navigazione button {
-    font-size: 1.1rem;
-    padding: 0.5rem 0.8rem;
-    width: 100%;
-    text-align: left;
+    width: 99vw;
+    min-width: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 0.95em;
+    padding: 6px 2vw 6px 2vw;
+    top: calc(50% + 60px);
+    flex-wrap: wrap;
+    gap: 8px;
   }
   .tabella-libri {
-    font-size: 0.95rem;
-    width: 100vw;
-    min-width: unset;
-    max-width: 100vw;
+    min-width: 0;
+    font-size: 0.92em;
     overflow-x: auto;
     display: block;
   }
   .tabella-libri th, .tabella-libri td {
-    padding: 0.4rem 0.3rem;
-    font-size: 0.95rem;
-    min-width: 80px;
-  }
-  .proposta-acquisto {
-    width: 95vw;
-    max-width: 400px;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    padding: 1.2rem 0.7rem;
-  }
-  .proposta-acquisto-bottoni {
-    flex-direction: column;
-    gap: 0.7rem;
+    padding: 7px 2px;
+    font-size: 0.95em;
   }
   .footer-bar {
-    position: fixed;
+    max-width: 99vw;
     left: 0;
-    bottom: 0;
-    width: 100vw;
-    min-width: unset;
-    max-width: 100vw;
+    font-size: 0.92em;
+    padding: 5px 4px;
     border-radius: 0;
-    padding: 0.5rem 0.2rem;
-    font-size: 1rem;
-    flex-direction: row;
-    justify-content: space-around;
-    gap: 0.5rem;
   }
-  .footer-bar a, .footer-bar button {
-    font-size: 1rem;
-    padding: 0.4rem 0.7rem;
+  .info-btn {
+    right: 10px;
+    bottom: 10px;
+    width: 40px;
+    height: 40px;
   }
-  .contenuto {
-    padding-bottom: 3.5rem;
+  #proposta-prezzo .contenuto-proposta {
+    min-width: 0;
+    width: 98vw;
+    padding: 10px 2vw 10px 2vw;
   }
-  .immagine-profilo {
-    width: 90px;
-    height: 90px;
+}
+
+@media only screen and (max-width: 900px) {
+  body {
+    font-size: 18px;
+    padding: 20px;
   }
-  .titolo-principale {
-    font-size: 1.5rem;
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
   }
-  .sezione {
-    padding: 0.7rem 0.2rem;
+  .main-content {
+    width: 100%;
+    padding: 10px;
   }
-  .bottone {
-    font-size: 1rem;
-    padding: 0.5rem 1rem;
+  .content {
+    max-width: 98vw;
+    padding: 10px;
+    margin: 80px 1vw 24px 1vw;
+  }
+  .bg .nav {
+    width: 98vw;
+    min-width: 0;
+    max-width: 98vw;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1em;
+    gap: 16px;
+  }
+  .music-bar {
+    width: 95vw;
+    min-width: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1em;
+    padding: 8px 8vw 8px 4vw;
+    top: calc(50% + 120px);
+  }
+  .tabella-libri {
+    min-width: 0;
+    font-size: 0.98em;
+    overflow-x: auto;
+  }
+  .footer-bar {
+    max-width: 98vw;
+    left: 1vw;
+    font-size: 0.98em;
+    padding: 6px 8px;
+  }
+}
+
+@media only screen and (max-width: 430px),
+       only screen and (max-width: 600px) and (min-device-pixel-ratio: 2),
+       only screen and (max-width: 900px) and (min-device-pixel-ratio: 2) {
+  html {
+    font-size: 15px;
+  }
+  body {
+    font-size: 1em;
+    padding: 4vw 0 0 0;
+  }
+  .content {
+    max-width: 100vw;
+    padding: 2vw 1vw;
+    margin: 60px 0 10px 0;
+    font-size: 1em;
+  }
+  .bg .nav {
+    width: 100vw;
+    min-width: 0;
+    max-width: 100vw;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 0.92em;
+    gap: 4px;
+    height: 40px;
+    border-radius: 0;
+    top: 0;
+  }
+  .bg .nav .nav-item a img {
+    width: 20px;
+    height: 20px;
+  }
+  .music-bar {
+    width: 100vw;
+    min-width: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 0.92em;
+    padding: 4px 1vw 4px 1vw;
+    top: calc(50% + 30px);
+    flex-wrap: wrap;
+    gap: 4px;
+  }
+  .tabella-libri {
+    min-width: 0;
+    font-size: 0.9em;
+    overflow-x: auto;
+    display: block;
+  }
+  .tabella-libri th, .tabella-libri td {
+    padding: 5px 1px;
+    font-size: 0.92em;
+  }
+  .footer-bar {
+    max-width: 100vw;
+    left: 0;
+    font-size: 0.9em;
+    padding: 3px 2px;
+    border-radius: 0;
+  }
+  .info-btn {
+    right: 4px;
+    bottom: 4px;
+    width: 32px;
+    height: 32px;
+  }
+  #proposta-prezzo .contenuto-proposta {
+    min-width: 0;
+    width: 99vw;
+    padding: 6px 1vw 6px 1vw;
   }
 }

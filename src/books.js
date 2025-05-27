@@ -113,7 +113,6 @@ document.addEventListener('DOMContentLoaded', () => {
             corpoTabella.appendChild(notaTr);
         }
     });
-
     listaLibri.appendChild(tabella);
 
     let propostaPrezzo = document.createElement('div');

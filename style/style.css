@@ -545,10 +545,3 @@ body.books-page {
     background: #b3b3b3;
     color: #222;
 }
-@media (max-width: 500px) {
-    #proposta-prezzo .contenuto-proposta {
-        min-width: 0;
-        width: 95vw;
-        padding: 18px 4vw 14px 4vw;
-    }
-}
