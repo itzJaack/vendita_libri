@@ -41,7 +41,7 @@ document.addEventListener('DOMContentLoaded', () => {
             note: "Libro ricoperto con copertina trasparente. *Libro in condizioni semi-nuove, il fascicolo e' nuovo."
         },
         {
-            disponibile: true,
+            disponibile: false,
             classe: "Ⅲª/Ⅳª",
             titolo: "Colori della matematica - Ed.Blu aggiornata-L.Scient Vol. 3 Gamma+Trigon+Ebook",
             isbn: "9788849424119",
@@ -163,32 +163,29 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    const bottoneInfo = document.getElementById('bottone-info');
+    const infoBtn = document.getElementById('info-btn');
     const extraInfo = document.getElementById('extra-info');
-    const chiudiInfo = document.getElementById('chiudi-info');
-    const overlayInfo = document.getElementById('overlay-info');
-    if (bottoneInfo && extraInfo && overlayInfo) {
-        bottoneInfo.addEventListener('click', () => {
-            const body = document.body;
+    const closeInfo = document.getElementById('close-info');
+    const infoOverlay = document.getElementById('info-overlay');
+    if (infoBtn && extraInfo && infoOverlay) {
+        infoBtn.addEventListener('click', () => {
             extraInfo.classList.add('show');
-            overlayInfo.style.display = 'block';
-            body.classList.add('info-open');
+            infoOverlay.style.display = 'block';
+            document.body.classList.add('info-open');
         });
     }
-    if (chiudiInfo && extraInfo && overlayInfo) {
-        chiudiInfo.addEventListener('click', () => {
-            const body = document.body;
+    if (closeInfo && extraInfo && infoOverlay) {
+        closeInfo.addEventListener('click', () => {
             extraInfo.classList.remove('show');
-            overlayInfo.style.display = 'none';
-            body.classList.remove('info-open');
+            infoOverlay.style.display = 'none';
+            document.body.classList.remove('info-open');
         });
     }
-    if (overlayInfo && extraInfo && chiudiInfo) {
-        overlayInfo.addEventListener('click', () => {
-            const body = document.body;
+    if (infoOverlay && extraInfo && closeInfo) {
+        infoOverlay.addEventListener('click', () => {
             extraInfo.classList.remove('show');
-            overlayInfo.style.display = 'none';
-            body.classList.remove('info-open');
+            infoOverlay.style.display = 'none';
+            document.body.classList.remove('info-open');
         });
     }
     var mailLink = document.querySelector('#extra-info a[href^="mailto:"]');
