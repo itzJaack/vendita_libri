@@ -158,7 +158,12 @@ document.addEventListener('DOMContentLoaded', () => {
             const subject = encodeURIComponent('Libri');
             const to = encodeURIComponent('gibinjacopo@liceoandreamaffei.it');
             const body = encodeURIComponent(`Proposta acquisto: ${libro.titolo}\nPrezzo: ${prezzo}`);
-            window.open(`https://mail.google.com/mail/?view=cm&fs=1&to=${to}&su=${subject}&body=${body}`);
+            const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+            if (isMobile) {
+                window.location.href = `mailto:${to}?subject=${subject}&body=${body}`;
+            } else {
+                window.open(`https://mail.google.com/mail/?view=cm&fs=1&to=${to}&su=${subject}&body=${body}`);
+            }
             propostaPrezzo.style.display = 'none';
         }
     });

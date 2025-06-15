@@ -56,12 +56,21 @@
   .footer-bar {
     position: static;
     margin-top: 24px;
-    left: unset;
+    left: 0;
+    right: 0;
     bottom: unset;
-    width: 100%;
+    width: 100vw;
     max-width: 100vw;
     border-radius: 0;
     box-shadow: none;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 0;
   }
   .info-btn {
     right: 10px;
