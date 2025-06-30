@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     const libri = [
         {
-            disponibile: true,
+            disponibile: false,
             classe: "Ⅲª",
             titolo: "Zefiro 1 Edizione Nuovo Esame di Stato / Dalle origini al Cinquecento",
             isbn: "9788839536624",
@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
             note: "Libro ricoperto con copertina trasparente. *II libro contiene appunti in matita/penna (non miei), i due fascicoli sono come nuovi."
         },
         {
-            disponibile: true,
+            disponibile: false,
             classe: "Ⅲª",
             titolo: "On Topic B2 SB+WB / Your World, Your Ideas, Your Future",
             isbn: "9788883396762",
@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', () => {
             note: "Libro ricoperto con copertina trasparente. Contiene fogli con degli esercizi svolti."
         },
         {
-            disponibile: true,
+            disponibile: false,
             classe: "Ⅲª",
             titolo: "Storia. Progettare il futuro 2ed. (LA) - Conf. 1 + Atlante Geostoria (LDM) / Dall'anno Mille al Seicento",
             isbn: "9788808317537",
@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', () => {
             note: "Libro ricoperto con copertina trasparente."
         },
         {
-            disponibile: true,
+            disponibile: false,
             classe: "Ⅲª",
             titolo: "Filosofia in dialogo / Volume 1 Dalle origini al Tardo Medioevo + Filosofia per tutti 1",
             isbn: "9788842795401",
@@ -61,7 +61,7 @@ document.addEventListener('DOMContentLoaded', () => {
             note: "Libro ricoperto con copertina trasparente."
         },
         {
-            disponibile: true,
+            disponibile: false,
             classe: "Ⅲª",
             titolo: "La Divina Commedia. Inferno.",
             isbn: "9788800228565",
