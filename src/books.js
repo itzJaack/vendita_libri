@@ -51,7 +51,7 @@ document.addEventListener('DOMContentLoaded', () => {
             note: "Libro ricoperto con copertina trasparente. *Il libro contiene esercizi svolti in penna (non miei), il fascicolo è come nuovo."
         },
         {
-            disponibile: true,
+            disponibile: false,
             classe: "Ⅲª",
             titolo: "Fisica di Cutnell e Johnson 2ed. (LA) - Vol. 1 (LDM) / Meccanica e Termodinamica",
             isbn: "9788808070625",
